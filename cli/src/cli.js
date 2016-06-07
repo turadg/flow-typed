@@ -10,6 +10,7 @@ import * as yargs from "yargs";
 import {fs, path} from "./lib/node.js";
 
 import * as Install from "./commands/install.js";
+import * as RunCITests from "./commands/runCITests.js";
 import * as RunTests from "./commands/runTests.js";
 import * as Search from "./commands/search.js";
 import * as ValidateDefs from "./commands/validateDefs.js";
@@ -25,6 +26,7 @@ export function runCLI() {
   };
   const commands: Array<CommandModule> = [
     Install,
+    RunCITests,
     RunTests,
     Search,
     ValidateDefs,
